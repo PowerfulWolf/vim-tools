@@ -14,7 +14,8 @@
 >4. 配置PATH路径，加入ctags，cscope插件路径
 
 * 三. 其他
->a) YouCompleteMe插件安装步骤
+>a) YouCompleteMe插件安装步骤<br>
+>>**require: VIM -VI IMproved 8.0+ && support python2/3**
 >>1. 下载YouCompleteMe
 ```
 git clone --recursive https://github.com/Valloric/YouCompleteMe.git
