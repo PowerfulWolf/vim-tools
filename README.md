@@ -21,7 +21,7 @@
 git clone --recursive https://github.com/Valloric/YouCompleteMe.git
 git submodule update --init --recursive
 ```
->>2. 安装libclang(官网下载二进制文件)，并配置用户编译环境变量
+>>2. 安装libclang(官网下载二进制文件，版本3.9+)，并配置用户编译环境变量
 >>3. 编译构建ycm_core库
 >>>3.1 创建ycm_build目录放置中间过程产生的文件<br>
 >>>3.2 进入ycm_build目录生成makefile<br> 
@@ -32,6 +32,8 @@ cmake -G "Unix Makefiles" . ~/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp
 >>>>3.2.2 需要C家族的语义化补全<br>
 ```
 cmake -G "Unix Makefiles" -DUSE_SYSTEM_BOOST=ON -DUSE_SYSTEM_LIBCLANG=ON . ~/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp
+or
+cmake -G "Unix Makefiles" -DUSE_SYSTEM_BOOST=ON -DEXTERNAL_LIBCLANG_PATH=/path/to/libclang.so . ~/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp
 ```
 >>>3.3 编译构建ycm_core<br>
 >>>--config Release 这个构建选项进针对 Windows<br>
