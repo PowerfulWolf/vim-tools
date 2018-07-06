@@ -16,12 +16,9 @@
 * 三. 其他
 >a) YouCompleteMe插件安装步骤<br>
 >>**require: VIM -VI IMproved 8.0+ && support python2/3**
->>1. 下载YouCompleteMe
+>>1. 下载YouCompleteMe，并检查分支完整性
 ```
 git clone --recursive https://github.com/Valloric/YouCompleteMe.git
-```
->>检查分支完整性<br>
-```
 git submodule update --init --recursive
 ```
 >>2. 安装libclang(官网下载二进制文件)，并配置用户编译环境变量
