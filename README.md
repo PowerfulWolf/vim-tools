@@ -17,11 +17,11 @@
 >a) YouCompleteMe插件安装步骤
 >>1. 下载YouCompleteMe
 ```
-git clone --recursive https://github.com/Valloric/YouCompleteMe.git<br>
+git clone --recursive https://github.com/Valloric/YouCompleteMe.git
 ```
 >>检查分支完整性<br>
 ```
-git submodule update --init --recursive<br>
+git submodule update --init --recursive
 ```
 >>2. 安装libclang(官网下载二进制文件)，并配置用户编译环境变量
 >>3. 编译构建ycm_core库
@@ -29,11 +29,11 @@ git submodule update --init --recursive<br>
 >>>3.2 进入ycm_build目录生成makefile<br> 
 >>>>3.2.1 不需要C家族的语义化补全<br>
 ```
-cmake -G "Unix Makefiles" . ~/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp<br>
+cmake -G "Unix Makefiles" . ~/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp
 ```
 >>>>3.2.2 需要C家族的语义化补全<br>
 ```
-cmake -G "Unix Makefiles" -DUSE_SYSTEM_BOOST=ON -DUSE_SYSTEM_LIBCLANG=ON . ~/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp<br>
+cmake -G "Unix Makefiles" -DUSE_SYSTEM_BOOST=ON -DUSE_SYSTEM_LIBCLANG=ON . ~/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp
 ```
 >>>3.3 编译构建ycm_core<br>
 >>>--config Release 这个构建选项进针对 Windows<br>
