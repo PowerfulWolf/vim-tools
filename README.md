@@ -15,7 +15,8 @@
 
 * 三. 其他
 >a) YouCompleteMe插件安装步骤<br>
->>**require: VIM -VI IMproved 8.0+ && support python2/3**
+>>**require: VIM -VI IMproved 8.0+ && support python2/3<br>
+tips: 安装vim时，增加 --enable-pythoninterp=yes --with-python-config-dir=/usr/lib64/python2.6/config 选项开启Python支持。**
 >>1. 下载YouCompleteMe，并检查分支完整性
 ```
 git clone --recursive https://github.com/Valloric/YouCompleteMe.git
@@ -30,6 +31,8 @@ git submodule update --init --recursive
 cmake -G "Unix Makefiles" . ~/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp
 ```
 >>>>3.2.2 需要C家族的语义化补全<br>
+>>>>**(1) 编译过程需要boost库，且有版本要求，如果系统boost库版本较低，或者没有安装，先安装boost;<br>
+(2) 如果boost安装目录非默认目录，设置BOOST_INCLUDEPATH=/path/to/boost/include**
 ```
 cmake -G "Unix Makefiles" -DUSE_SYSTEM_BOOST=ON -DUSE_SYSTEM_LIBCLANG=ON . ~/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp
 or
