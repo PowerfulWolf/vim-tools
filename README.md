@@ -1,6 +1,6 @@
 # vim-tools
-十分全面的vim开发工具
-
+# 十分全面的vim开发工具
+![loading ...](https://github.com/PowerfulWolf/vim-tools/raw/master/Picture/show.PNG)
 * 一. 功能介绍
 >1. .vim工具包包含：
 >>a, after, autoload, cscope, ctags, grep, minibufexpl, nerdtree, supertab, taglist, vim-pathogen, winmanager等插件工具<br>
