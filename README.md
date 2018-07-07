@@ -43,4 +43,7 @@ cmake -G "Unix Makefiles" -DUSE_SYSTEM_BOOST=ON -DEXTERNAL_LIBCLANG_PATH=/path/t
 ```
 cmake --build . --target ycm_core --config Release
 ```
->>4. 配置.ycm_extra_conf.py文件
+>>4. 配置YouCompleteMe
+>>>(1) 复制./.vim/bundle/YouCompleteMe/third_party/ycmd/examples/.ycm_extra_conf.py至用户目录，方便配置管理<br>
+>>>(2) 配置.vimrc选项let g:ycm_global_ycm_extrac_conf='/path/to/.ycm_extra_conf.py'<br>
+>>>(3) 配置.ycm_extra_conf.py，增加相关库头文件目录<br>
