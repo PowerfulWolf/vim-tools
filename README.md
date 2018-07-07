@@ -1,6 +1,5 @@
-vim-tools
-====
-# 十分全面的vim开发工具
+# vim-tools
+## 十分全面的vim开发工具
 ![loading ...](https://github.com/PowerfulWolf/vim-tools/raw/master/Picture/show.PNG)
 * 一. 功能介绍
 >1. .vim工具包包含：
@@ -36,7 +35,9 @@ cmake -G "Unix Makefiles" . ~/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp
 (2) 如果boost安装目录非默认目录，设置BOOST_INCLUDEPATH=/path/to/boost/include**
 ```
 cmake -G "Unix Makefiles" -DUSE_SYSTEM_BOOST=ON -DUSE_SYSTEM_LIBCLANG=ON . ~/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp
+```
 or
+```
 cmake -G "Unix Makefiles" -DUSE_SYSTEM_BOOST=ON -DEXTERNAL_LIBCLANG_PATH=/path/to/libclang.so . ~/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp
 ```
 >>>3.3 编译构建ycm_core<br>
